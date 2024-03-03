@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000; /* Black background */
+            color: #ddd; /* Light text color */
+            font-family: Arial, sans-serif;
+
+        }
+
+        .jumbotron {
+            background-color: #000000; /* Darker background */
+            text-align: center;
+            padding: 450px 0px; /* Adjust padding for larger screens */
+            margin-bottom: 0;
+        }
+
+        .jumbotron h1 {
+            font-size: 6em;  /* Increased font size */
+            color: #9932cc;  /* Purple color */
+            text-shadow: 0 0 20px #9932CC; /* Subtle text shadow */
+        }
+
+        .btn-neon {
+            background-color: #9932CC; /* Purple background */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 0 20px #9932CC; /* Neon glow effect */
+        }
+
+        #Welcome {
+            font-family: "Micro 5", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 140px;
+}
+
+        #btn {
+            font-size: 30px;
+            font-family: monospace 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4" id="Welcome">Welcome!</h1>
+            <a href="{% url 'home' %}" class="btn btn-neon " id="btn">Start Chat</a>
+        </div>
+        </div>
+
+</body>
+</html>
